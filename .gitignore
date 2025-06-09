@@ -1,0 +1,29 @@
+# .gitignore
+# Python 缓存
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# VSCode/IDE 配置
+.vscode/
+.idea/
+
+# 日志与本地数据
+log/
+*.log
+
+# 环境/依赖
+.env
+.venv/
+venv/
+
+# Docker 构建缓存
+*.egg-info/
+
+# 系统文件
+.DS_Store
+Thumbs.db
+
+# 其它
+*.bak

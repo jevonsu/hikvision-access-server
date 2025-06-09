@@ -1,0 +1,9 @@
+{
+  "name": "hikvision-access-server-dev",
+  "image": "python:3.11-slim",
+  "runArgs": ["--network=host"],
+  "postCreateCommand": "pip install -r requirements.txt && apt-get update && apt-get install -y redis-server && service redis-server start",
+  "forwardPorts": [387, 6379],
+  "settings": {},
+  "workspaceFolder": "/workspace"
+}
